@@ -18,10 +18,8 @@ public class BFS {
                 Vertex v = (Vertex) graph[u.num].get(j);
                 if (v.pre == null || dists[v.num] > (u.dist + 1)) {
                     v.color = 1;
-                    if (v.pre == null || dists[v.num] > (u.dist + 1)) {
-                        v.pre = u;
-                        q.push(v);
-                    }
+                    v.pre = u;
+                    q.push(v);
                     v.dist = dists[v.num] != -1 ? Math.min(dists[v.num], u.dist + 1) : u.dist + 1;
                     dists[v.num] = v.dist;
                 }

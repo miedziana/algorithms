@@ -8,8 +8,8 @@ public class MinTree {
         }
         int pivot = (start + end) / 2;
         BTNode node = new BTNode(array[pivot], null, null);
-        node.setLeft(minTreeNode(array, start, pivot - 1));
-        node.setRight(minTreeNode(array, pivot + 1, end));
+        node.left = minTreeNode(array, start, pivot - 1);
+        node.right = minTreeNode(array, pivot + 1, end);
         return node;
     }
 

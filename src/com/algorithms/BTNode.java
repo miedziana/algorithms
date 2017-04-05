@@ -1,8 +1,13 @@
 package com.algorithms;
 
 public class BTNode {
-    private int id;
-    private BTNode left, right;
+    int id;
+    int data;
+    BTNode left, right;
+
+    public BTNode() {
+
+    }
 
     public BTNode(int id, BTNode left, BTNode right) {
         this.id = id;
@@ -10,27 +15,4 @@ public class BTNode {
         this.right = right;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public BTNode getLeft() {
-        return left;
-    }
-
-    public void setLeft(BTNode left) {
-        this.left = left;
-    }
-
-    public BTNode getRight() {
-        return right;
-    }
-
-    public void setRight(BTNode right) {
-        this.right = right;
-    }
 }

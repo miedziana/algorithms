@@ -4,7 +4,13 @@ public class BinaryTree {
 
     private BTNode root;
 
+    BinaryTree() {
 
+    }
+
+    BinaryTree(BTNode root) {
+        this.root = root;
+    }
 
     public BTNode getRoot() {
         return root;
